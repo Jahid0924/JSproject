@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currncy Converter</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon" /> 
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -18,32 +18,68 @@
     <div class="page">
       <div class="container">
         <h1>Currncy Converter</h1>
-        <!-- <form> -->
-          <input class="Amount" type="text" placeholder="Enter Amount" />
-          <div class="select-box">
-            <div class="leftside">
-              <p>Form</p>
-              <div class="mergesel">
+
+        <input class="Amount" type="text" placeholder="Enter Amount" />
+        <div class="select-box">
+          <div class="leftside">
+            <p>Form</p>
+            <div class="mergesel1">
               <img src="https://flagsapi.com/US/flat/64.png" alt="Error" />
-              <select class="usersel" id="fromSelect"><option value=""></option></select>
-            </div>
-          </div>
-          <i class="fa-solid fa-arrow-right-arrow-left"></i>
-            <div class="rightside">
-              <p>To</p>
-              <div class="mergesel">
-              <img src="https://flagsapi.com/IN/flat/64.png" alt="Error" />
-              <select class="usersel" id="toSelect">
-               <option value=""></option>
+              <select class="usersel" id="fromSelect">
+                <option value=""></option>
               </select>
             </div>
-            </div>
+            <input type="text" class="From hide" placeholder="Enter" />
           </div>
-          <div class="output"></div>
-          <button id="getresult" >Get Exchange Rate</button>
-        <!-- </form> -->
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          <div class="rightside">
+            <p>To</p>
+            <div class="mergesel2">
+              <img src="https://flagsapi.com/IN/flat/64.png" alt="Error" />
+              <select class="usersel" id="toSelect">
+                <option value=""></option>
+              </select>
+            </div>
+            <input type="text" class="To hide" placeholder="Enter" />
+          </div>
+        </div>
+        <div class="output"></div>
+        <button id="getresult">
+          <span class="text">Get Exchange Rate</span>
+        </button>
       </div>
     </div>
+    <div class="otherway">
+      <div class="box">
+        <h2 id="heading">if you are lazy to find out:</h2>
+
+        <div class="information">
+          <ul>
+            <li>First click the button to change the mode.</li>
+            <li>
+              Then enter the currency code of a country in the two boxes(From
+              and To).
+            </li>
+          </ul>
+        </div>
+        <button class="changeMode">
+          <svg
+            viewBox="0 0 16 16"
+            class="bi bi-lightning-charge-fill"
+            fill="currentColor"
+            height="16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"
+            ></path>
+          </svg>
+          Change
+        </button>
+      </div>
+    </div>
+
     <script src="code.js"></script>
     <script src="app.js"></script>
   </body>
