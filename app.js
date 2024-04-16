@@ -40,7 +40,7 @@ mode.addEventListener("click", (e) => {
   console.log(e);
   var changeEvent = e.type;
   console.log(changeEvent)
-  // result.innerHTML = "";
+  result.innerHTML = "";
   userBox1.classList.add("hide");
   userBox1.classList.remove("mergesel1")
   userBox2.classList.add("hide");
@@ -69,7 +69,6 @@ function CurrencyConverter(event) {
         )} ${toCurr}`;
       });
   } else if (fromInputval.length == 3 && toInputval.length == 3 && Amount.length != 0) {
-    alert("Input box.");
     fetch(Url)
       .then((res) => res.json())
       .then((data) => {
