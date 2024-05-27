@@ -25,6 +25,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    border-radius: 5px;
 }
 .select-box{
     width: 90%;
@@ -139,7 +140,7 @@ input::placeholder{
 }
 .otherway{
     z-index: 2;
-    position: sticky;
+    position: absolute;
     top: 100vh;
     height: 100vh;
     background: linear-gradient(1300deg,#121222, #271b4e);
@@ -154,7 +155,7 @@ input::placeholder{
     background-color: #9831c1;
     display: flex;
     flex-direction: column;
-    
+    border-radius: 5px;
     align-items: center;
 }
 #heading{
@@ -175,6 +176,7 @@ ul{
   margin-bottom: 30px;
 }
 a{
+  background-color: #8335dc;
   text-decoration: none;
   color: #1c0931;
   box-shadow: 0 0 4px rgb(11, 49, 49);

@@ -91,3 +91,30 @@ function CurrencyConverter(event) {
 }
 
 btn.addEventListener("click", CurrencyConverter);
+
+
+
+gsap.from(".container",{
+  opacity:0,
+  duration:0.8,
+  y:25,
+  delay:0.7,
+  scrollTrigger:{
+          trigger:".page .container",
+          scroller:"body",
+          scrab:true
+  }
+})
+
+gsap.from(".otherway .box",{
+  scale:0,
+  opacity:0,
+  // rotate:360,
+  z:25,
+  delay:0.6,
+  duration:0.9,
+  scrollTrigger:{
+    trigger:".otherway .box",
+    scroller:"body",
+  }
+})
